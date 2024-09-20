@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navbar.master.cs" Inherits="RAisoLab.Views.Guest.Navbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:HyperLink ID="HomeLink" runat="server" NavigateUrl ="~/Views/Guest/HomePage.aspx">Home</asp:HyperLink>
+            <asp:HyperLink ID="LoginLink" runat="server" NavigateUrl ="~/Views/Guest/LoginPage.aspx">Login</asp:HyperLink>
+            <asp:HyperLink ID="RegisterLink" runat="server" NavigateUrl="~/Views/Guest/RegisterPage.aspx">Register</asp:HyperLink>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
